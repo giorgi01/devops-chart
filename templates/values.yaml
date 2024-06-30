@@ -1,0 +1,16 @@
+namespace: "your-namespace"
+deployment:
+  name: "web-server-yourname"
+image:
+  repository: "nginx"
+  tag: "latest"
+serviceAccount:
+  name: "web-service-account"
+configMap:
+  name: "web-config"
+  htmlContent: |
+    <html>
+    <head><title>Welcome</title></head>
+    <body><h1>Hello, World!</h1></body>
+    </html>
+
